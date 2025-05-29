@@ -1,0 +1,6 @@
+
+12:20:51 #
+12:21:21 Task List: 10.0, 50.0
+12:21:21 Step 1: Wait 10.0 minute(s) (600 seconds)...
+12:31:21 -> Turn off monitor
+12:31:22 Step 2: Wait 50.0 minute(s) (3000 seconds)...

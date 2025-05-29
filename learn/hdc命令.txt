@@ -1,0 +1,496 @@
+﻿链接[任意一个汉字]功
+链接[\u4e00-\u9fa5]功
+链接[任意10个汉字]功
+链接[\u4e00-\u9fa5]{10}功
+sta[任意1个字母]t
+sta[a-zA-Z]t
+sta[任意10个字母]t
+sta[a-zA-Z]{10}t
+startB[任意一个或多个数字]
+startB\d+
+说明：
+
+
+对比项	hdc_std	hdc
+来源	HarmonyOS 官方工具	旧版/定制工具
+适用系统	OpenHarmony/HarmonyOS	旧版华为设备（如 LiteOS）
+功能完整性	全面（支持目录传输等）	可能受限
+推荐程度	✅ 官方推荐	⚠️ 逐步淘汰
+建议：优先使用 hdc_std，除非目标设备明确要求 hdc。
+
+[\u4e00-\u9fa5] 匹配任意一个汉字
+{n} 表示前面的元素恰好出现n次
+[a-zA-Z] 匹配任意一个字母（大小写不限）
+\d 匹配任意数字，+ 表示前面的元素出现一次或多次
+
+hdc install -r -d /path/to/your/app.hap
+bash
+参数说明：
+-r：替换已存在的应用（保留数据）。
+-d：允许版本降级（必需参数，否则会报错 INSTALL_FAILED_VERSION_DOWNGRADE）。
+
+
+-i：忽略大小写
+-v：反向匹配，显示不包含模式的行
+-w：匹配整个单词
+-n：显示匹配行的行号
+-c：只显示匹配的行数
+模式控制
+-e <pattern>：指定搜索模式
+-f <file>：从文件读取模式
+-E：使用扩展正则表达式
+-F：固定字符串匹配（禁用正则）
+输出控制
+-o：只显示匹配的部分
+--color：高亮显示匹配文本
+-A <num>：显示匹配行后的num行
+-B <num>：显示匹配行前的num行
+-C <num>：显示匹配行前后的num行
+rm -rf   /system/etc/extension_blocklist_config.json 
+hdc shell ps -ef | grep testserviceext    pid进程，kill [pid] kill -9 $(pid)
+
+hdc list targets
+
+hdc shell reboot recovery
+
+
+hdc shell aa start -a [AbilityName] -b [BundleName]
+包名：
+hdc shell "aa dump -l | grep name"
+hdc shell bm dump -a /n (<bundle_name>)
+hdc shell aa dump -a (<bundle_name>)
+开启打开app的ability
+
+安装                        用户
+bm install -p /data/A.hap -u 101
+bm install -p /system/app/com.test.drivertest/A40.hap
+/storage/media/100/local/files/Docs/Desktop
+data/service/el2/100/hmdfs/account/files/Docs/Desktop/
+桌面
+
+/data/service/el2/100/hmdfs/account/files/Docs/Download
+手机路径
+
+hdc shell "hilog -b d"
+
+hdc shell hidumper -s WindowManagerService -a '-a'
+活动应用
+hdc shell "hidumper -s 4607 -a -a"
+显示屏
+hdc shell "aa dump -l | grep 'bundle name'"
+hdc file recv /storage/Users/currentUser/Download/select.mp4 D:\
+
+hdc shell param get const.ohos.apiversion
+older sdk  获取sdk版本
+
+删除 rm -rf [path]
+清空应用缓存：hdc shell bm clean -n com.huawei.hmsapp.appgallery -c
+com.huawei.hmos.browser
+
+hdc target mount
+hdc shell rm -rf /system/app/Browser
+hdc shell rm -rf /data/service/el1/public/bms/bundle_manager_service/*
+hdc shell reboot
+
+清空应用数据：hdc shell bm clean -n com.huawei.hmsapp.appgallery -d 
+杀死某个应用：hdc shell aa force-stop com.huawei.hmsapp.appgallery
+提取某个应用的日志：hdc hilog | find "com.huawei.hmsapp.appgallery" > D:1.txt
+解除rom日志加密功能：hdc shell param set persist.sys.hilog.binary.on fales  再次重启测试机：hdc shell reboot
+查看正在运行的项目包名：hdc shell "aa dump -l | grep name"
+日历项目包名：hdc shell bm clean -n com.huawei.hmos.calendar
+抓debug日志：hdc shell hilog -b D
+
+hdc install -f -r -p C:\Users\kwx1412683\Downloads\readDownloadData.hap
+设备文件操作提示只读权限：
+hdc shell mount -o remount,rw /sys_prod        
+hdc shell mount -o remount,rw /       
+hdc target mount
+传输文件  hdc file send 文件地址  /data/service/el2/100/hmdfs/account/files/Docs/Desktop/
+拿文件 hdc file recv data/service/el2/100/hmdfs/account/files/Docs/Desktop/文件名 电脑地址
+
+获取读写权限  hdc target mount
+1、放置磁吸键盘（hdc shell
+param set dms.hidumper.supportdebug true
+hidumper -s 4607 -a -supertrans,4）
+2、移除磁吸键盘 （
+hidumper -s 4607 -a -supertrans,5）
+展开 1  半折2  闭合3  键盘态4  取走键盘5
+
+设置设备永不灭屏：hdc shell power-shell setmode 602
+
+hdc file recv  /sys_prod/etc/window/resources/window_manager_config.xml
+
+查看程序： hdc shell hidumper -s WindowManagerService -a '-a'
+
+取出文件到本地	hdc file recv /data/log/faultlog/faultlogger/ D:\
+本地文件发送到设备 hdc file send 本地路径 设备路径
+在设备路径下查看是否有该文件 hdc shell  #cd 要查看的路径  #ls 显示路径下的所有文件
+重启设备 hdc shell reboot
+
+hdc install -r -p "C:\Users\kwx1412683\Downloads\3.31\SR000S4RQ4\SR000S4RQ42.hap"
+过滤日志关键词 hdc shell # hilog | grep "getSystemFontFullNamesByTypeTest"
+清日志命令：hdc shell "rm -f /data/log/hilog/*.gz"
+恢复出厂设置：hdc shell reboot updater
+hdc shell "write_updater user_factory_reset"
+hdc shell reboot updater
+
+
+1、设备类别
+直板机：NOH（NOAH），ALN，CEPI（PLA，PLR，PLU，CLS），LMR
+大折叠：ALT（ALTB），ICL
+小折叠：LEM，VER（verde）
+平板：WAG，XYAO，WEB
+PC：KLV，HAD（harden）
+折叠PC：HBP（hopper）
+2、常用命令
+hdc file send E:\a.txt /data/local/tmp/a.txt   PC导入至设备
+hdc file recv /data/local/tmp/a.txt ./a.txt       设备导入PC
+
+hdc shell param set persist.sys.hilog.binary.on false   关闭日志加密
+hdc shell reboot bootloader  进入fastboot
+hdc shell bm disable -n com.huawei.hmos.hwstartupguide   跳过开向导的命令
+hdc shell write_updater user_factory_reset;reboot updater   PC类设备刷完，在设置密码界面，一直提示密码设置失败
+设备文件操作提示只读权限：
+hdc shell mount -o remount,rw /sys_prod        
+hdc shell mount -o remount,rw /       hdc target mount
+3、用例问题优先找创建人确认，其他离职人员找下面对应责任人确认
+ 段浩晨  dWX1019223  wWX1138559 liujinnan
+ 张乐杰  dWX1280443  zWX1134659
+ 赵浩然  zwx1286205   hWX1284177  wWX1138559
+ 张改      zWX1284139  wWX1287369  yWX1286144  zWX1280756 
+ 张鹏义  zWX1285873
+ 3D天气的用例优先找张跃 30043828和王秋浩 wx1290325确认
+ 4、对于用例中存在so文件用例
+so文件大多只基于当时需求转测时所推送的，后续版本大都不需要推送了，如果需要推送，需要重新编译可推送至测试版本的so文件。
+ 5、安装hap报错的原因
+   设备链接没连上，或者设备USB端口没开
+   设备存在同名的hap，可以将设备上的其他hap删除后再安装
+   hap过期的，可以获取工程自行编译，若无工程，可以找创建人或交接责任人问下
+ 6、IDE的工程编译
+   需要替换为当前测试版本的sdk，sdk获取在版本转测邮件中（Full SDK（开源））下载的文件参考：
+
+下载解压完成后，打开IDE工具打开DevEco Studio\sdk\default\openharmony目录，替换为测试版本的sdk，编译工程
+https://wenote.huawei.com/wapp/pages/view/share/s/0orE3w161h7K2rQHQg0hX0md1tP0gw0aVN7M2yXKZ00jWpwY
+
+
+
+
+
+
+
+DTS2025032121932
+用例腐化，用例需要修改
+
+DTS2025032713501
+这个单号就是 子窗不显示，点击拖动主窗后子窗才会显示
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2、关机
+
+命令：hdc_std shell reboot shutdown
+
+3、、重新启动系统
+
+命令：hdc_std shell reboot
+
+4、安装应用：
+
+命令：hdc_std install 应用包所在路径
+
+举例：hdc_std install D:\liukch\downloads\hengping\browser.hap
+
+5、卸载应用
+
+命令：hdc_std uninstall [BundleName]
+
+举例：hdc_std uninstall com.archermind.web
+
+6、查BundleName和AbilityName名称
+
+命令：hdc_std shell wukong appinfo
+
+7、上传文件到pad
+
+命令：hdc_std file send 文件路径(文件位置) 文件上传pad的路径
+
+举例：hdc_std file send D:\wy\downloads\img\8.jpg /storage/media/100/local/files/Pictures
+
+8、从pad下载文件到电脑
+
+命令：hdc_std file recv 文件路径(文件位置) 文件下载到电脑的路径
+
+举例：hdc_std file recv storage/media/100/local/files/Pictures/Screenshots D:\
+
+9、查看日志
+
+命令：hdc_std hilog
+
+10、抓取log并保存
+
+命令：hdc_std hilog >log.log
+
+举例：hdc_std hilog > D:\log.txt
+
+11、查询连接设备
+
+命令：hdc_std list targets
+
+12、获取设备udid
+
+命令：hdc_std shell bm get -u
+
+13、查看应用配置信息
+
+命令：hdc_std shell bm dump -n [BundleName]
+
+举例：hdc_std shell bm dump -n com.archermind.web
+
+14、清除应用缓存
+
+命令：hdc_std shell bm clean -n [BundleName] -c
+
+举例：hdc_std shell bm clean -n com.archermind.web -c
+
+15、清除应用数据
+
+命令：hdc_std shell bm clean -n [BundleName] -d
+
+举例：hdc_std shell bm clean -n com.archermind.web -d
+
+16、启动指定应用
+
+命令：hdc shell aa start -a EntryAbility -b 包名
+
+举例:  hdc_std shell aa start -a EntryAbility -b com.archermind.web
+
+17、强制退出应用
+
+命令：hdc_std shell aa force-stop [BundleName]
+
+举例：hdc_std shell aa force-stop com.superred.reminder
+
+18、查看当前任务栈的ability信息(后台启动的应用)
+
+命令：hdc_std shell aa dump -l
+
+19、截图
+
+命令：
+
+hdc_std shell snapshot_display -f /data/screenshot.png
+
+hdc_std shell file recv /data/screenshot.png D:
+
+20、获取进程信息和线程信息
+
+hdc shell top
+
+21、查看屏幕信息
+
+hdc shell hidumper -s 10 -a screen
+
+22、查看当前窗口信息
+
+hdc shell hidumper -s WindowManagerService -a '-a'
+
+23、获取应用信息
+
+hdc shell aa dump -a
+
+拷贝文件到开发板失败
+hdc file send d:\ohtest.hap /system/
+
+[Fail]Error opening file: read-only file system, path:/system//ohtest.hap
+
+1. 重新挂在目标目录
+
+hdc shell mount -o rw,remount
+
+2. 可能目标目录只读，更换其他可读写目录尝试一下
+
+hdc file send d:\ohtest.hap /data/
+
+FileTransfer finish, Size:xxx time:86ms rate:xxxkB/s
+注意：客户端和设备端版本保持一致(hdc -v,hdcd -v参数查看版本)!
+
+
+
+### 设备信息查询
+  - **查看设备详细信息**：`hdc list targets -v`，可以查看已连接设备的详细信息，包括设备的连接状态、IP地址、端口号等.
+  - **获取设备的UDID**：`hdc shell bm get --udid` 或 `hdc shell bm get -u`，UDID是设备的唯一设备标识符，在设备管理和应用调试等场景中可能会用到.
+  - **查看设备的系统属性**：`hdc shell getprop [属性名称]`，例如 `hdc shell getprop ro.build.version.incremental` 可以获取设备的版本号.
+
+  ### 应用管理
+  - **强制停止应用**：`hdc shell am force-stop [appName]`，可用于在应用出现异常或需要强制关闭时停止应用的运行.
+  - **获取应用列表**：`hdc shell bm list`，能够列出设备上已安装的所有应用的包名和版本号等信息.
+  - **获取应用Ability信息**：`hdc shell bm dump [appName]`，可以查看指定应用的Ability相关信息，有助于了解应用的架构和功能.
+
+
+  ### 日志操作
+  - **查看日志**：`hdc hilog`，可以在终端实时打印设备的日志信息，方便开发人员查看应用的运行状态和排查问题.
+  - **开始保存日志到文件**：`hdc shell hilog -w start`，将设备的日志信息开始保存到文件中，以便后续进行详细分析.
+  - **停止保存日志到文件**：`hdc shell hilog -w stop`，停止将日志信息保存到文件.
+
+  ### 文件操作
+  - **删除文件**：`hdc shell rm -rf [filePath]`，用于删除设备上指定路径的文件或文件夹.
+  - **列出目录内容**：`hdc shell ls [目录路径]`，可以查看设备上指定目录下的文件和文件夹列表。
+
+### 设备操作
+  - **重启设备**：`hdc shell reboot`，可远程重启连接的鸿蒙设备.
+  - **点亮屏幕（唤醒）**：`hdc shell input keyevent 224`，通过发送按键事件来点亮设备屏幕，在设备处于睡眠状态时可使用此命令唤醒设备.
+
+  ### 端口转发
+  - **本地端口转发到手机**：`hdc port-forward [本地端口号] [设备端口号]`，可以将本地计算机上的指定端口号的数据转发到设备的对应端口号，方便进行网络调试等操作.
+  - **显示端口转发列表**：`hdc port-forward -l`，查看已经设置的端口转发任务列表.
+  - **删除端口转发任务**：`hdc port-forward -r [本地端口号] [设备端口号]`，删除指定的端口转发任务.
+
+  ### 模拟操作
+  - **屏幕截图**：`hdc shell snapshot_display -f [保存路径]`，可截取设备当前屏幕的图像并保存到指定的路径下.
+  - **屏幕录屏**：`hdc shell screenrecord [保存路径]`，用于录制设备的屏幕操作过程，并将录制的视频保存到指定路径.
+  - **点击操作**：`hdc shell input tap [x坐标] [y坐标]`，在设备屏幕的指定坐标位置模拟点击操作，可用于自动化测试等场景.
+  - **滑动操作**：`hdc shell input swipe [起始x坐标] [起始y坐标] [结束x坐标] [结束y坐标]`，在设备屏幕上模拟从起始坐标到结束坐标的滑动操作.
+
+  ### 其他操作
+  - **查看HDC版本**：`hdc -v`，输出版本号，确认HDC工具是否正常可用以及当前使用的版本.
+  - **杀掉HDC进程**：`hdc kill`，类似于 `adb kill-server`，用于停止HDC服务，在出现连接问题或需要重新启动HDC时可使用.
+  - **重启HDC**：`hdc start -r`，重启HDC服务，以便重新建立与设备的连接或解决一些潜在的连接问题.
+
+一、常用命令
+1、进入OpenHarmony后台
+
+hdc shell
+2、设置不息屏
+
+power-shell setmode 602    
+3、获取开发板文件
+
+hdc_std file recv <开发板文件路径> <本地保存文件路径>
+4、发送文件到开发板
+
+hdc_std file send <本地文件的路径> <开发板文件存放路径>
+5、测试网络
+
+ping <IP地址> 
+6、重挂载
+
+mount -o rw,remount /
+7、查询设备类型：设备类型分为default（默认设备）、tablet、tv、wearable、2in1等
+
+hdc shell param get "const.product.devicetype"
+8、命令行启动应用
+
+hdc shell aa start -a <abilityName> -b <bundleName>
+9、关闭/开启selinux（拦截）。setenforce是Linux的selinux防火墙配置命令， 执行setenforce 0 表示关闭selinux防火墙
+
+setenforce 0 （setenforce 1）
+ 10、文件写入
+
+echo <内容> > <文件路径>
+
+
+11、文件内容查看
+
+cat <文件路径>
+
+
+12、查看当前连接所有设备，-v 显示详情
+
+hdc list targets （-v）
+
+
+13、唤醒/休眠屏幕
+
+hdc shell power-shell wakeup
+ 
+hdc shell power-shell suspend
+14、查看设备的硬盘容量
+
+hdc shell df -h
+15、查看设备的SN号
+
+hdc shell param get ohos.boot.sn
+16、查看当前设备上的HAP包的Bundle Name
+
+hdc shell bm dump -a
+17、查看设备系统版本
+
+hdc shell param get const.product.software.version
+二、常用目录
+1、Openharmony预安装hap目录
+
+/system/app
+2、Openharmony本地媒体资源目录
+
+/storage/media/100/local/files
+
+
+三、常用linux命令
+1、zip、unzip 压缩与解压缩命令
+
+zip -r archive_name.zip directory_or_file  //压缩文件或目录
+ 
+unzip archive_name.zip   //解压缩文件
+2、mv 命令
+
+mv [选项] <source_file> <target_file>
+//mv [选项] 源文件或目录 目标文件或目录。
+//其中，源文件或目录是要移动或重命名的文件或目录
+//而目标文件或目录是移动到的位置或新的文件名
+四、常用资源网址
+1、每日构建（获取fullSDK等）
+
+http://ci.openharmony.cn/workbench/cicd/dailybuild/dailylist
+2、官方应用开发资料
+
+https://docs.openharmony.cn
+3、开发工具下载
+
+https://developer.huawei.com/consumer/cn/develop/
+4、laval社区（Openharmony开发社区，可提问）
+
+https://laval.csdn.net/
+
+
+
+
+涉及修改文件，刷完机统一执行
+hdc shell param set persist.bms.test-upgrade true
+hdc shell reboot
+
+
+
+hdc target mount
+hdc shell mount -o rw,remount /
+::1.卸载预置AG
+hdc shell rm -rf /system/app/AppGallery/*
+hdc shell rm -rf /data/service/el1/public/bms/bundle_manager_service/*
+
+::2.卸载样机管理
+hdc shell mount -o remount,rw /sys_prod
+hdc shell rm -rf /sys_prod/app/MSPES/MSPES.hap
+
+::4.重启
+hdc shell reboot
+pause
+
+
+

@@ -1,0 +1,1205 @@
+kwx1412683
+0000427590
+8030-A01-210700003
+卡号
+3198240187
+C2-5C-025	、
+主机8030-A01-210700003	M70KZP1J	L250100977M	
+显示屏1 8050-A02-201000059	U460V2W5	显示屏2 8050-A02-200400105	U160H46Y
+显示屏3 8030-A02-200900006	5HBX304
+
+welink 字体颜色 color 128 155 255
+kwx1412683@china.huawei.com
+kongweihao1@huawei-partners.com
+
+todo 下载文件夹 按时间移动归纳
+todo py自动化 剪贴板到设备
+√ 浏览器插件或者py打开ai五分钟刷新一次避免登录
+√ todo bat 到github
+√ todo oc gif FFmpeg切割大小
+√ todo 中午自动音量降到5 定时任务 14:00 使用一分钟缓慢恢复
+√ Chromedriver 
+
+网络
+C2-5GN-1
+1QAZ2wsx@
+hwx1335810
+hjj521,,
+wpa_supplicant -i wlan0 -c <(wpa_passphrase "C2-5GN-1" "1QAZ2wsx@")
+
+DTS2025032121932
+窗口 用例腐化，用例需要修改
+
+DTS2025022213304
+phone
+
+DTS2025042211833
+元能力 web
+
+#用例
+按照本用例的操作步骤，与预期结果不符，使用创建人提供的操作步骤执行pass，已经和开发和创建人沟通，此条用例标记PASS，但此条用例需要整改，已登记
+
+网站没权限打开 标记  FP不可执行 网站无权限
+
+以后咱们有待确认的用例，标记Block，在失败原因那写上：待确认，问题现象
+如果遇到历史用例未整改的，标记Block，后边写上用例待整改，
+遇到用例无法执行的，标记UNavailable
+取消关联写上链接
+
+说个事，昨天晚上磊哥跟我说 他跟客户对过了，从今天开始 以后咱们待整改用例不算条数 说省的再出现和首期中期类似的问题，识别出来是待整改以后 要标记un，完了登记到咱们那个待整改/取消关联的表格里，然后缺少设备、版本未合入、未转测的 还有其他创建人表明标记un的 也登记到表格里取消关联的sheet页里，等这个任务测完了以后 PL找对应的任务创建人统一把所有un都取消关联。最重要的是 如果有沟通记录截图就把截图贴到表格里，不管是待整改还是取消关联，这样是对咱们的一种保护 
+这个，如果有的用例创建人表示修改之后可以通过，这种就标记pass 不标un，然后在pass的备注里加上详细描述，也登记到表格中附上截图
+
+# 问题单
+web提单在 处理建议 写下，方便测试经理走单
+问题发现阶段写SIT 4.17后
+5.0版本单子，问题发现阶段选SIT（4月17日后）
+6.0版本单子，问题发现阶段SDV，向测试经理确认
+定级表：12.0（5月8日后）
+
+
+
+
+拿昨天的一些
+39
++5(-2)
+5.1引入执行补齐_pc + 21(2)
++13
+5.21
+
+不剩了
+66(-6) + 18
+5.20
+
++67
+5.19
+
++40
+32主干媒体验收_pc + 39
+132主干_关键特性验证_pc + 1
+5.18周日
+
+剩18 前面剩的
+5.1引入执行补齐_pc +15
+110条性能测试
+5.16
+
+
+手机web_兼容性测试 + 441
+性能测试
+4.30
+
+剩 18
+写入 61
+=29
+web29dev + 28
+窗口FP用例执行5.0.1.120 + 1
+4.29
+
+剩50
+写入71
+= 67
+窗口FP用例执行5.0.1.120 + 37
+窗口5.1商分B106 + 30
+4.28
+
+剩54
+写入72
+= 72 
+窗口5.1商分B106 + 49
+窗口daily + 23
+4.27
+
+剩54
+写入104
+窗口daily + 108
+4.25
+
+剩 50
+写入 98-2
+图形 + 82
+包管理 + 15
+web_历史复测_PC_FP_二期 + 1
+4.24
+
+剩50-2
+写入57
+包管理 + 60
+4.23
+
+写入32-2 剩(47-2)
+phone2 + (28-4)
+4.22
+
+写入50 剩49
+phone2 + 50
+5.1.0.103商分版本FP项目元能力手机设备手工用例执行2
+4.21
+
+继续留 49个
+= 74 pass31 fail43
+5.0.0.315(Harden) SP23 + (31-1)
+提单+1
+fail： 43
++ 49
+4.18
+
+
+剩 49
+= 130 写入81
+5.0.0.315(Harden) SP23 + 58
+OpenHarmony 5.0.0.315(Harden) SP21 + 1
+5.0.0.313(SP23C00E200R5P1) + 6
+phone + 15 + 8 = 119 - 96 = 23
++ 42
+4.17
+
+
+计入 85 还剩 42
+= 127
+phone + （96-18） = 78
++60
+4.16
+
+
+写入 101 剩 60
+phone + 18
+315plus + 61
+= 81
+315 + 42
+313昨天 16 + 23 = 39
+4.15
+
+313 +126 分给明天16
+4.14
+
+分完了
+1501-4
+偷偷给以前300
+45 个应用
++801-2 = 1801-4
++1000-2
+4.11
+
+
+现在还能给明天1000-2
+1562-2 给明天 600-2
+（3023-5）-（865-1）=（2162-4）
+4.10
+
++200 = 1061 还剩400
+phone +861-1
+昨天SP31 100 p3 +11 写昨天了
+4.9
+
+剩 600
+填表353+82= 435 （-11）
+非手机 76+6=82（-11）
+手机953 
+今天SP31 100 p3 +76-10
+昨天图形 +4 上次100 （+2-1） 合计（+6-1）
+4.8
+
+今天结算 （写北向 100-7）
+晚上50分半图形 20-2 完成
+上次100 80 +（47-1） 差1
+上次给的 33-4
+4.7
+
+
+给下次33-4
+total 133-9
+今天的新100 p5  +80
+昨天的100 完成 +53-9  96 军军+1 新奇+3
+4.3
+
+下午 100 43-8 下一天完成
+上午 40 + 16 完成
+实际 96 写80给4.2 16
+4.2
+
+
+710-100 p3
+4.1 100 头了差几个
+https://integrate-cida.szv.dragon.tools.huawei.com/deskui/project/projectDetail/178c780be44f469a9137fe5a36156d5e/138e243403e841efa9255287ffad1e2c/manualTest?filter=Project-associated%20version&spaceUri=vn1kvbie4do&resourceUri=/061e0tvuc3g9v/060e0vrkgjo25/061i0vrkgkdu0/06k010bmpe8h5/06k010bmpe8js/06n510c16es83/
+
+940-50条p10 
+42个 + 5 = 47
+3.31 完成
+https://integrate-cida.szv.dragon.tools.huawei.com/deskui/project/projectDetail/178c780be44f469a9137fe5a36156d5e/138e243403e841efa9255287ffad1e2c/manualTest?filter=Project-associated%20version&resourceUri=/061e0tvuc3g9v/060e0vrkgjo25/061i0vrkgkdu0/06bp10aiuqtos/06bp10aiuqtsb/06g710avpinlb/&caseUri=/061e0tvuc3g9v/060e0vrkgjo25/061i0vrkgkdu0/06bp10aiuqtos/06bp10aiuqtr5/06b510aiuvqqe/06ee10aj01ecge6j/06eg10ar1f30556m/06eg10ar1f30g56n/06eg10ar1f30q56o/06fs10avpcnghlto/06fs10avpcogclvl/06fs10avpcsdqn6o/
+
+
+
+用例参与-失败
+1. 20-4
+2. 8-2
+3.26完成
+
+1. 13-2 
+3. 29-1
+3.27完成
+
+用例105
+53-7 
+3.28完成
+
+
+DTS2025032713501
+这个单号就是 子窗不显示，点击拖动主窗后子窗才会显示
+DTS2025032404315
+旧web
+用例整改的问题，优先筛关键词，让下发的人取消关联；新用例之前没有标记用例整改的，按照之前的办法，标记fail，绑腐化单，然后填到那个用例整改的表格
+
+如果有些用例属于demo失效、改关键词、开发给了新的demo，表格登记
+原因写上：
+按照本用例的操作步骤，无法执行或者是demo无法安装，使用开发提供的操作步骤执行pass，已经和开发和接口人沟通，此条用例标记PASS，但此条用例需要整改，已登记
+按照本用例的操作步骤，与预期结果不符，使用开发提供的操作步骤执行pass，已经和开发和接口人沟通，此条用例标记PASS，但此条用例需要整改，已登记
+按照本用例的操作步骤，与预期结果不符，使用创建人提供的操作步骤执行pass，已经和开发和创建人沟通，此条用例标记PASS，但此条用例需要整改，已登记
+
+
+Win+R 打开运行窗口，输入 SystemPropertiesPerformance.exe → 回车。
+在 视觉效果 选项卡中：
+取消勾选 ☑️ 在桌面上为图标标签使用阴影
+
+
+
+这段代码主要使用lxml库解析HTML并提取表格数据。以下是逐层解析，重点围绕lxml.html的核心用法展开：
+
+一、lxml库与html模块
+from lxml import html  # 关键导入
+python
+lxml库：是Python中处理XML/HTML的高性能库，底层用C语言实现，结合了libxml2和libxslt的优点。
+html模块：专门用于处理HTML内容，提供HTML解析、XPath查询等功能。
+二、HTML解析核心：html.fromstring()
+tree = html.fromstring(html_content)  # 将HTML字符串转换为元素树
+python
+作用：将HTML字符串解析成元素树对象（类似DOM树），后续所有XPath操作都基于此对象。
+特点：
+自动补全缺失的HTML标签（如<html>, <body>）。
+支持对畸形HTML的容错处理。
+对比其他解析器：
+比标准库html.parser更快，比BeautifulSoup（默认解析器）性能更好。
+提供完整的XPath 1.0支持。
+三、XPath语法精要
+代码中使用了多个XPath表达式定位元素，以下是关键点：
+
+1. 定位表格容器
+//div[contains(@class, "devui-table-view") 
+        and contains(@class, "contain-fix-height") 
+        and contains(@class, "devui-table-scroll-left")]
+python
+//：从任意层级查找元素。
+div：目标标签名。
+contains(@class, "value")：模糊匹配class属性包含指定值的元素。
+逻辑运算符：and 表示多个条件需同时满足。
+2. 定位表格行
+.//tr[td]  # 相对路径查找包含<td>的<tr>
+python
+.：表示从当前节点（之前找到的div）开始查找。
+tr[td]：筛选出包含至少一个<td>子元素的<tr>。
+3. 提取第三列文本
+.//td[3]//text()  # 获取第三个<td>下所有文本
+python
+td[3]：索引从1开始，表示第三个<td>。
+//text()：递归获取所有子节点的文本（包括深层嵌套文本）。
+四、元素树操作详解
+1. 获取匹配元素列表
+tables = tree.xpath('xpath_expression')  # 返回匹配的元素列表
+if not tables:
+    raise ValueError("没找到表格")
+python
+返回值：始终返回列表，即使只有一个匹配元素。
+安全访问：通过tables[0]访问第一个匹配元素，需先判断列表是否为空。
+2. 处理文本内容
+cell = row.xpath('.//td[3]//text()')
+clean_text = ' '.join(''.join(cell).strip().split())
+python
+文本拼接：''.join(cell)合并所有文本片段。
+清理空格：
+strip()：去除首尾空白。
+split() + ' '.join()：将连续空白（包括换行）替换为单个空格。
+五、全局变量与计数逻辑
+global count  # 声明使用全局变量
+count = 0
+if clean_text:
+    count += 1
+    if count % 50 == 0:
+        result += clean_text + ";\n\n"  # 每50条换行
+python
+全局变量风险：count在函数内修改会影响其他调用，建议改用类或参数传递。
+换行逻辑：每50条数据插入一个换行符，增强可读性。
+六、文件与路径操作
+desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')  # 获取桌面路径
+save_dir = os.path.join(desktop_path, '用例记录')
+os.makedirs(save_dir, exist_ok=True)  # 自动创建目录
+python
+跨平台路径：os.path.join()自动处理不同操作系统的路径分隔符。
+目录创建：exist_ok=True避免目录已存在时报错。
+七、代码优化建议
+避免全局变量：改用函数参数或类属性。
+字符串拼接优化：使用列表存储结果，最后用'\n'.join()合并，减少内存碎片。
+异常细化：区分文件不存在、XPath匹配失败等不同错误类型。
+八、完整流程总结
+读取HTML文件 → 2. 解析为元素树 → 3. XPath定位目标元素 → 4. 提取并清理文本 → 5. 格式化输出 → 6. 保存结果。
+掌握以上知识点后，可以灵活运用lxml.html处理各种HTML解析需求，例如网页爬虫、数据抽取等场景。
+
+
+
+
+
+模拟一场一年经验Python开发岗位的面试，并直接告诉我答案，对于非代码技术的问题回答要大方，颇有远见
+已深度思考
+好的，我现在需要模拟一场针对有一年Python开发经验的岗位面试，并给出答案。首先，我需要确定面试中可能涉及的技术问题和非技术问题。技术问题可能包括Python基础、数据结构与算法、框架使用、数据库知识等。非技术问题可能涉及团队合作、项目经验、问题解决能力等。
+
+对于技术问题，我需要确保答案准确且简洁，同时展示对Python的深入理解。例如，关于装饰器的问题，需要解释其作用、用法以及实际应用场景。对于算法题，如反转链表，需要写出清晰且高效的代码，并解释思路。
+
+非技术问题需要展示沟通能力和团队合作精神。例如，当被问到与同事意见不合时，应强调通过沟通和数据分析达成共识。项目经验方面，要具体说明自己在项目中的角色、使用的技术以及遇到的挑战和解决方案。
+
+此外，需要注意回答的结构，确保逻辑清晰，语言专业但不生硬。对于每个问题，先给出直接答案，再进行适当的扩展，展示知识深度和实际应用能力。同时，要避免过于冗长，保持回答的简洁性。
+
+现在需要检查是否有遗漏的重要知识点，比如Django和Flask的区别，数据库优化方法，以及单元测试的重要性。确保这些问题都被覆盖，并且答案准确。例如，解释Django的MTV模式与Flask的轻量级特性，以及索引在数据库优化中的作用。
+
+最后，模拟面试的问题顺序应合理，从基础到进阶，从技术到非技术，逐步深入，以全面评估候选人的能力。确保每个回答都能体现候选人的技术水平和软技能，符合一年经验开发者的定位。
+
+以下是一场模拟的1年经验Python开发岗位面试及参考答案，分为技术问题和非技术问题：
+
+一、技术问题
+1. Python中装饰器（Decorator）的作用是什么？写一个记录函数执行时间的装饰器
+答：装饰器用于在不修改原函数代码的前提下扩展函数功能。示例代码：
+
+import time
+def timer_decorator(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(f"{func.__name__} 执行耗时: {end - start:.2f}秒")
+        return result
+    return wrapper
+@timer_decorator
+def my_function():
+    time.sleep(1)
+my_function()  # 输出：my_function 执行耗时: 1.00秒
+python
+2. 如何用Python反转一个单链表？手写代码
+答：
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+def reverse_linked_list(head):
+    prev = None
+    current = head
+    while current:
+        next_node = current.next
+        current.next = prev
+        prev = current
+        current = next_node
+    return prev
+python
+思路：用三个指针（prev, current, next_node）迭代修改节点指向。
+
+3. Django和Flask的核心区别是什么？
+答：
+
+Django：全栈框架，内置ORM、Admin、认证等功能，适合中大型项目，强调“开箱即用”。
+Flask：微框架，轻量灵活，需自行组合扩展（如SQLAlchemy），适合小型项目或API开发。
+选择依据：项目复杂度与团队对技术栈的控制需求。
+4. 如何优化数据库查询速度？
+答：
+
+添加索引（避免全表扫描）。
+使用select_related或prefetch_related（Django ORM减少查询次数）。
+避免N+1查询问题，用批量操作替代循环单条查询。
+对频繁查询但更新少的数据做缓存（如Redis）。
+5. 什么是Python的GIL？对多线程有何影响？
+答：GIL（全局解释器锁）确保同一时刻仅一个线程执行Python字节码。
+影响：CPU密集型任务中多线程无法利用多核优势，建议改用多进程或协程（asyncio）；I/O密集型任务中多线程仍有效。
+
+二、非技术问题
+1. 你在过去项目中遇到的最大挑战是什么？如何解决的？
+答：在开发一个实时数据同步功能时，遇到了高并发下的性能瓶颈。我通过以下步骤解决：
+
+用异步任务队列（Celery）分流处理。
+引入Redis缓存热点数据。
+优化SQL查询，添加复合索引。
+最终将响应时间从2s降至200ms内，并写了技术文档团队共享。
+2. 如何保证代码质量？
+答：
+
+强制代码审查（Git Merge Request）。
+编写单元测试（pytest），覆盖率至少80%。
+使用SonarQube静态代码分析。
+遵循PEP8规范，用Black自动格式化。
+容器化（Docker）保证环境一致性。
+3. 与同事技术方案意见冲突时如何处理？
+答：
+
+先倾听对方方案的优缺点，避免预设立场。
+用数据说话：对比性能测试结果、开发成本、维护性。
+在沙盒环境分别验证，邀请团队共同评估。
+最终服从技术负责人的决策，保持执行一致性。
+4. 未来1-2年希望提升哪些技术方向？
+答：
+
+深入云原生技术（K8s、Serverless），适应微服务架构趋势。
+研究LLM与编程结合场景，如用Copilot提升开发效率。
+学习领域驱动设计（DDD），提升复杂业务建模能力。
+目标是成为能独立主导模块的全栈开发者。
+5. 你如何看待单元测试的价值？
+答：单元测试是代码的“安全网”，核心价值包括：
+
+快速反馈功能正确性，减少手动测试成本。
+支持重构信心，避免修复Bug引入新问题。
+作为活文档，描述函数的设计意图。
+建议将测试作为开发流程的必选项，而非可选项。
+三、反问环节（候选人提问）
+团队目前的技术栈与未来规划？
+公司对工程师的成长支持（培训、会议预算等）？
+项目的核心业务挑战与创新点？
+以上回答需结合个人实际经验调整，保持技术深度与沟通自然度。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import time def timer_decorator(func): def wrapper(*args, **kwargs): start = time.time() result = func(*args, **kwargs) end = time.time() print(f"{func.__name__} 执行耗时: {end - start:.2f}秒") return result return wrapper @timer_decorator def my_function(): time.sleep(1) my_function() # 输出：my_function 执行耗时: 1.00秒 我是Python初学者，详细解释代码，尤其是 def wrapper(*args, **kwargs):
+已深度思考
+嗯，用户提供的这段代码是关于Python装饰器的，特别是用来测量函数执行时间的。用户是Python初学者，所以需要详细解释代码，尤其是wrapper函数里的*args和**kwargs部分。
+
+首先，我需要回顾装饰器的基本概念。装饰器是用来修改或增强函数行为的函数，通常通过包裹另一个函数来实现。在这个例子中，timer_decorator是一个装饰器，用来计算被装饰函数的执行时间。
+
+用户可能对装饰器的结构不太清楚，所以需要分解代码。timer_decorator是一个函数，接受一个函数func作为参数，并返回内部定义的wrapper函数。当用@timer_decorator装饰my_function时，相当于将my_function替换为wrapper的实例。
+
+接下来，重点在wrapper函数的定义：def wrapper(args, **kwargs)。这里使用了args和**kwargs作为参数，用户可能不太明白它们的含义和作用。需要解释这是为了接收任意数量的位置参数和关键字参数，确保被装饰的函数无论有什么样的参数都能正确处理。
+
+然后，在wrapper内部，记录了开始时间start，调用原始函数func(*args, **kwargs)，这里同样传递了args和kwargs，这样无论my_function有什么参数，都能正确传递进去。调用结束后计算时间差，并打印结果。
+
+用户可能会问，为什么需要传递*args和**kwargs？这是因为装饰器需要通用，能够处理任何被装饰的函数，无论它们的参数如何。比如，如果my_function有参数，比如def my_function(a, b)，那么在调用时，wrapper会正确接收这些参数并传递给func。
+
+另外，可能需要解释闭包的概念，即wrapper函数可以访问外部函数timer_decorator的参数func，以及如何保持这些变量的状态。同时，装饰器的语法糖@是如何工作的，替换了my_function = timer_decorator(my_function)。
+
+还要注意，在调用func之后，结果被保存并返回，这样被装饰的函数依然能返回正确的结果，不会因为装饰器而影响原有功能。
+
+最后，用户运行my_function()时，实际执行的是wrapper函数，因此会输出执行时间。需要强调整个过程是如何一步步执行的，以及各个部分的作用，特别是*args和**kwargs在这里的关键作用，确保装饰器的通用性。
+
+可能需要提醒用户，如果不使用*args和**kwargs，当被装饰的函数有参数时，装饰器会报错，因为wrapper无法接收这些参数。所以这两个参数的存在是为了让装饰器更加灵活和通用，适应不同函数的需求。
+
+这段代码是使用Python装饰器来实现函数执行时间的计算。让我们逐步分解并详细解释每个部分：
+
+def timer_decorator(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)  # 执行被装饰的函数
+        end = time.time()
+        print(f"{func.__name__} 执行耗时: {end - start:.2f}秒")
+        return result
+    return wrapper
+python
+重点解释 def wrapper(*args, **kwargs):
+参数结构：
+
+*args：接收任意数量的位置参数（例如：my_function(1, 2, 3)）
+**kwargs：接收任意数量的关键字参数（例如：my_function(a=1, b=2)）
+作用：
+
+这个包装函数（wrapper）需要能够处理被装饰函数（func）的所有可能的参数形式。
+无论被装饰的函数需要多少个参数，或者参数是什么类型（位置参数或关键字参数），wrapper都能原封不动地传递这些参数给原始函数。
+参数传递：
+
+func(*args, **kwargs)：将接收到的所有参数原样传递给被装饰的原始函数。
+例如，当调用my_function(5, name="test")时：
+args 会变成元组 (5,)
+kwargs 会变成字典 {"name": "test"}
+func(*args, **kwargs) 就等同于 func(5, name="test")
+完整执行流程
+装饰器注册：
+
+@timer_decorator
+def my_function():
+    time.sleep(1)
+python
+等价于：my_function = timer_decorator(my_function)
+此时my_function变量指向的是wrapper函数
+调用过程： 当执行my_function()时：
+
+实际调用的是wrapper()
+执行流程：
+记录开始时间 start = time.time()
+调用原始函数 result = func()（这里func是原来的my_function）
+记录结束时间 end = time.time()
+打印耗时信息
+返回原始函数的执行结果
+其他关键点
+闭包特性：wrapper函数可以访问外部函数timer_decorator的参数func
+通用性设计：通过*args和**kwargs的设计，这个装饰器可以适用于任何函数，无论其参数形式如何
+返回结果保留：return result确保了被装饰函数的返回值不会被装饰器影响
+示例扩展
+如果被装饰函数有参数：
+
+@timer_decorator
+def add(a, b):
+    return a + b
+print(add(2, 3))  # 仍然可以正常工作
+python
+输出：
+
+add 执行耗时: 0.00秒
+5
+总结图示
+调用 my_function()
+│
+↓
+进入 wrapper()
+├─ 记录开始时间
+├─ 调用原始 my_function（通过 func）
+├─ 记录结束时间
+├─ 计算并打印耗时
+└─ 返回原始函数的结果
+这个装饰器模式是Python中非常重要的功能，广泛用于日志记录、性能测试、权限校验等场景。*args和**kwargs的使用确保了装饰器的通用性和灵活性。
+
+
+为什么使用@timer_decorator会自动执行里面的def wrapper(*args, **kwargs):
+已深度思考
+嗯，用户问为什么使用@timer_decorator会自动执行里面的def wrapper(*args, **kwargs)。我之前已经解释过装饰器的基本结构和工作流程，但用户可能还没有完全理解装饰器的执行机制，特别是装饰器如何替换原函数，以及参数传递的过程。
+
+首先，我需要确认用户的理解程度。用户是Python初学者，可能对装饰器的语法和背后的原理不太清楚。他们可能认为加上@timer_decorator后，wrapper函数会自动执行，但其实装饰器是在函数定义时应用的，而wrapper是在调用被装饰函数时才运行的。
+
+用户可能混淆了装饰器的应用时机和函数调用时机。装饰器在函数定义时被调用，即当Python解释器遇到@语法时，会立即将my_function传递给timer_decorator，并将返回的wrapper函数赋值给my_function。这时候，wrapper函数并没有执行，只是替换了原函数。当用户调用my_function()时，实际上调用的是wrapper函数，这时才会执行wrapper内部的代码。
+
+接下来，我需要详细解释装饰器的应用过程。比如，当使用@timer_decorator时，相当于执行了my_function = timer_decorator(my_function)。timer_decorator返回的是wrapper函数，所以之后每次调用my_function()，其实调用的是wrapper。
+
+然后，需要说明为什么wrapper的参数是args和**kwargs。这是因为装饰器需要通用，能够处理任何被装饰函数的参数。使用args和**kwargs可以接受任意数量的位置参数和关键字参数，从而确保无论原函数有什么参数，都能正确传递。
+
+可能还需要用例子说明，比如如果原函数有参数，比如def add(a, b)，当调用add(2,3)时，wrapper接收这些参数，传递给func，即原来的add函数。
+
+此外，用户可能对闭包的概念不太了解，需要简单解释闭包如何让wrapper访问到func这个变量，以及装饰器的嵌套结构。
+
+最后，总结装饰器的工作流程：装饰器在函数定义时替换原函数为wrapper，调用原函数时实际执行wrapper，并在wrapper中执行计时逻辑。
+
+你提到的核心问题其实是关于装饰器的执行机制。让我们通过一个分步解析来彻底理解这个过程：
+
+1. 装饰器的本质：函数替换
+当你在函数定义前写 @timer_decorator 时，Python 会做以下操作：
+
+# 等价于：
+my_function = timer_decorator(my_function)
+python
+关键点：此时 my_function 变量不再指向原始函数，而是指向 timer_decorator 返回的 wrapper 函数
+2. 装饰器的触发时机
+装饰器在模块加载时立即执行（即 @timer_decorator 这一行代码被解释时）：
+
+解释器看到 @timer_decorator，立即调用 timer_decorator(my_function)
+得到返回值 wrapper 函数
+将 my_function 变量指向这个 wrapper
+此时原始函数并未执行，只是被"包裹"起来了
+
+3. 函数调用时的执行流程
+当执行 my_function() 时：
+
+# 实际执行的是 wrapper()
+start = time.time()              # 开始计时
+result = func(*args, **kwargs)   # 这里才执行原始 my_function
+end = time.time()                # 结束计时
+print(...)                       # 打印耗时
+return result                    # 返回原始函数结果
+python
+4. 参数传递的魔法 (*args, **kwargs)
+为什么需要这样设计？因为要保证：
+
+通用性：装饰器可以装饰任何函数，无论其参数形式
+透明性：被装饰函数的使用方式不需要改变
+参数类型	示例	在 wrapper 中的处理
+无参数	func()	args=(), kwargs={}
+位置参数	func(1, 2)	args=(1,2), kwargs={}
+关键字参数	func(a=1, b=2)	args=(), kwargs={'a':1, 'b':2}
+混合参数	func(1, b=2)	args=(1,), kwargs={'b':2}
+5. 完整执行时序图
+定义函数时：
+定义 my_function → 应用装饰器 → my_function = wrapper
+调用时：
+my_function() → 调用 wrapper() → 在 wrapper 内部：
+   │
+   ├─ 执行计时逻辑
+   ├─ 调用原始函数 (通过 func)
+   └─ 返回原始函数的结果
+python
+6. 关键理解点
+装饰器只运行一次：在模块加载时完成函数替换
+wrapper 是实际被调用的函数：每次调用被装饰函数时，都是在执行 wrapper
+闭包机制：wrapper 记住了原始函数 (func)，即使装饰器已经执行完毕
+7. 验证实验
+可以添加打印语句来观察执行顺序：
+
+def timer_decorator(func):
+    print("装饰器被应用了！")  # 这个会在模块加载时打印
+    def wrapper(*args, **kwargs):
+        print("wrapper 被调用了！")  # 每次调用被装饰函数时打印
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(f"{func.__name__} 执行耗时: {end - start:.2f}秒")
+        return result
+    return wrapper
+@timer_decorator
+def my_function():
+    time.sleep(1)
+# 运行后会看到：
+# 装饰器被应用了！ （立即打印）
+# （调用时）
+# wrapper 被调用了！
+# my_function 执行耗时: 1.00秒
+python
+总结
+自动执行的不是 wrapper 的定义，而是装饰器在函数定义时完成了函数替换
+真正执行 wrapper 的逻辑发生在函数被调用时
+*args, **kwargs 的设计保证了装饰器可以处理任意参数形式的函数
+这种设计模式实现了： ✅ 非侵入式修改（不改动原函数代码） ✅ 代码复用（一个装饰器可用于多个函数） ✅ 关注点分离（计时逻辑与业务逻辑分离）
+
+
+详细讲解这段代码，尤其是 def __init__(self, val=0, next=None): 我不是很懂 class ListNode: def __init__(self, val=0, next=None): self.val = val self.next = next def reverse_linked_list(head): prev = None current = head while current: next_node = current.next current.next = prev prev = current current = next_node return prev
+已深度思考
+嗯，我现在需要详细理解用户提供的这段代码，特别是ListNode类的__init__方法，以及reverse_linked_list函数。用户提到对__init__部分不太明白，所以我得先仔细看看这个部分。
+
+首先，我看到定义了一个ListNode类。类里面有一个__init__方法，参数是val=0和next=None。这可能是一个链表的节点类。val代表节点的值，next是指向下一个节点的指针。默认情况下，val设为0，next设为None，这样在创建节点时如果不指定参数，就会生成一个值为0，且没有下一个节点的节点。
+
+接下来是reverse_linked_list函数，这个函数的作用应该是反转链表。函数内部使用了prev、current和next_node这几个变量。prev初始化为None，current指向头节点head。然后进入循环，循环条件是current不为空。在循环体内，首先保存current的下一个节点到next_node，然后将current的next指向prev，这样就实现了当前节点指向前一个节点。接着，prev移动到current的位置，current移动到next_node的位置。循环结束后，prev就是反转后的新头节点，所以返回prev。
+
+不过，用户可能对__init__的参数和self的使用不太清楚。比如，为什么参数中有默认值？self.val和self.next的作用是什么？这个时候需要解释类实例的初始化过程，每个节点如何保存自己的值和指向下一个节点的指针。
+
+可能用户还不太理解链表的结构，比如每个节点包含数据和指向下一个节点的链接。所以__init__方法的作用就是初始化这两个属性。当创建一个ListNode实例时，val是节点存储的值，next是下一个节点的引用，默认没有下一个节点，所以是None。
+
+关于reverse_linked_list函数，可能需要详细解释每一步的操作，尤其是如何通过改变指针的指向来反转链表。例如，每次循环中，current节点断开原来的next连接，转而指向prev，然后prev和current向前移动。这个过程需要逐步分析，可能用例子来说明，比如原链表是1->2->3->None，反转后的链表应该是3->2->1->None，每一步变量的变化情况。
+
+另外，可能需要提到反转后的链表的头节点是原来的最后一个节点，所以在循环结束后，prev指向的是原链表的最后一个节点，也就是反转后的头节点，因此返回prev。
+
+用户可能存在的疑问点包括：为什么在循环里要先保存next_node？如果不保存的话，当改变current.next之后，就无法找到原来的下一个节点了，所以需要提前保存。这点需要强调，否则可能会导致链表断裂，无法继续遍历。
+
+还可以举一个具体的例子，比如初始链表是1->2->3，逐步展示每一步变量如何变化，帮助用户理解反转过程。例如：
+
+初始状态：prev = None, current = 1 第一步：保存next_node为2，将current.next指向None，prev变为1，current变为2 此时链表是1->None，但原来的2->3还存在，但因为current已经移动到2了 第二步：保存next_node为3，current.next指向1，prev变为2，current变为3 此时链表是2->1->None 第三步：保存next_node为None，current.next指向2，prev变为3，current变为None，循环结束 最终返回prev=3，即新链表的头节点，此时链表是3->2->1->None
+
+这样分步骤的讲解可能有助于用户理解整个过程。
+
+同时，需要确认用户是否理解类和对象的实例化过程。比如，当创建ListNode对象时，__init__方法会自动调用，设置val和next的值。例如，node = ListNode(1)会创建一个val为1，next为None的节点。如果有第二个节点node2 = ListNode(2, node)，那么node2的next指向node，形成链表node2 -> node -> None。
+
+总结一下，用户需要理解__init__方法如何初始化节点，以及反转函数如何通过修改指针方向来实现链表的反转。可能还需要强调指针操作的顺序，避免丢失引用。
+
+这段代码定义了一个链表节点类ListNode和一个反转链表的函数reverse_linked_list。我们逐部分详细讲解：
+
+1. ListNode类
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val    # 当前节点的值
+        self.next = next  # 指向下一个节点的指针
+python
+作用：创建链表节点，每个节点包含两个属性：
+
+val：当前节点存储的值（默认值为0）
+next：指向下一个节点的指针（默认值为None，表示没有下一个节点）
+示例：
+
+# 创建单个节点（值为5，没有下一个节点）
+node = ListNode(5)  
+# 相当于：node.val=5, node.next=None
+# 创建两个相连的节点
+node2 = ListNode(2)
+node1 = ListNode(1, node2)  
+# 相当于：node1.val=1, node1.next=node2
+# node2.val=2, node2.next=None
+python
+关键点：
+
+__init__是Python中的构造函数，在创建对象时自动调用
+self表示类的实例对象本身
+参数中的默认值（val=0, next=None）让创建节点更加灵活
+2. reverse_linked_list函数
+def reverse_linked_list(head):
+    prev = None
+    current = head
+    while current:
+        next_node = current.next  # 1. 保存下一个节点
+        current.next = prev       # 2. 反转指针方向
+        prev = current            # 3. prev前移
+        current = next_node       # 4. current前移
+    return prev                   # 最终prev是新头节点
+python
+工作原理：通过三指针法（prev、current、next_node）逐节点反转链表
+
+逐步解析（假设原始链表：1 → 2 → 3 → None）：
+
+步骤	current	next_node	prev	链表状态
+初始	1	-	None	1 → 2 → 3 → None
+第1步	1	2	None	1 → None，2 → 3 → None
+第2步	2	3	1	2 → 1 → None，3 → None
+第3步	3	None	2	3 → 2 → 1 → None
+结束	None	-	3	返回prev=3（新链表头节点）
+关键点：
+
+next_node = current.next：必须先保存下一个节点，因为后续要修改current.next
+反转方向后，节点间的原始连接被改变，因此需要按特定顺序移动指针
+当循环结束时，prev指向原始链表的最后一个节点，即反转后的新头节点
+3. 完整执行示例
+# 创建链表 1 → 2 → 3 → None
+n3 = ListNode(3)
+n2 = ListNode(2, n3)
+n1 = ListNode(1, n2)
+# 反转链表
+new_head = reverse_linked_list(n1)  # 返回的prev是3
+# 现在链表变为 3 → 2 → 1 → None
+# 遍历验证：
+current = new_head
+while current:
+    print(current.val, end=" → ")
+    current = current.next
+# 输出：3 → 2 → 1 → 
+python
+4. 常见疑问解答
+Q：为什么需要next_node临时变量？
+A：因为当我们修改current.next = prev后，会丢失原本的下一个节点地址，需要提前保存才能继续遍历。
+
+Q：时间复杂度是多少？
+A：O(n)，只需遍历链表一次，n为链表长度。
+
+Q：如何处理空链表？
+A：当head=None时，函数直接返回None，符合预期。
+
+通过这种逐节点修改指针方向的方式，算法仅使用常量额外空间（O(1)空间复杂度）就完成了链表反转，是一种非常高效的方法。
+
+
+def reverse_linked_list(head): prev = None current = head while current: next_node = current.next current.next = prev prev = current current = next_node return prev 其中 while current: 是如何进行循环的
+已深度思考
+嗯，我现在要理解这段Python代码里的while循环是怎么工作的。函数reverse_linked_list是用来反转链表的，对吧？那我得仔细看看循环部分。循环的条件是while current:，那current一开始是head，也就是链表的头节点。
+
+那prev初始是None，current是head。然后进入循环，只要current不是None，循环就会继续。那第一次循环的时候，current肯定是存在的，比如假设链表有至少一个节点。那循环里的步骤是这样的：
+
+首先，next_node被赋值为current.next，也就是当前节点的下一个节点。然后将current.next指向prev，也就是把当前节点的指针指向前一个节点。这个时候，原来的链就被打断了，当前节点现在指向prev，也就是None（第一次循环的时候prev是None）。然后prev被更新为current，current变成next_node，也就是原来的下一个节点。
+
+这样循环下去的话，每一步都是把当前节点的next指向前一个节点，然后prev和current都往后移动。直到current变成None的时候，循环结束。这时候prev应该是原来的最后一个节点，也就是反转后的头节点，所以函数返回prev。
+
+那具体举个例子可能更清楚。比如链表是1->2->3->None。初始时，prev是None，current是1。进入循环：
+
+第一次循环： next_node = current.next → 2 current.next = prev → 1的next变成None prev = current → prev现在是1 current = next_node → current现在是2
+
+现在链表的情况是1->None，而原来的2->3还存在，但这时候current是2。
+
+第二次循环： next_node = current.next → 3 current.next = prev → 2的next指向1 prev = current → prev变成2 current = next_node → current是3
+
+此时链表是2->1->None，而current是3。
+
+第三次循环： next_node = current.next → None current.next = prev → 3的next指向2 prev = current → prev变成3 current = next_node → current变成None
+
+此时循环条件不满足，退出循环。返回prev，即3，这时候链表是3->2->1->None。这样就完成了反转。
+
+那在这个过程中，每次循环都会处理一个节点，将其指针反转。而循环的条件是current不为空，所以当current移动到原链表的末尾的None时，循环终止。整个过程需要确保每一步正确修改指针的指向，同时更新prev和current的位置，这样才能正确反转链表。
+
+有没有可能漏掉什么情况？比如链表为空的情况，当head是None的时候，函数直接返回prev，也就是None，这样是正确的。如果链表只有一个节点，current一开始是那个节点，循环一次后current变成None，返回prev是该节点，指针反转正确。所以这段代码应该是正确的。
+
+那总结来说，while current: 循环会一直执行，直到current变为None。每次循环处理当前节点，将其指向prev，然后prev和current向前移动。这样一步步反转链表，直到处理完所有节点。
+
+在 reverse_linked_list 函数中，while current: 循环的作用是遍历并反转链表的每个节点。具体过程如下：
+
+初始条件：
+
+prev = None（表示前一个节点，初始为空）
+current = head（当前节点从链表头开始）
+循环步骤（假设链表为 1 → 2 → 3 → None）：
+
+第一次循环：
+
+next_node = current.next → 2
+current.next = prev → 1 指向 None（断开原链接）
+prev = current → prev 更新为 1
+current = next_node → current 移动到 2
+此时链表：1 → None，剩余部分 2 → 3 → None
+第二次循环：
+
+next_node = current.next → 3
+current.next = prev → 2 指向 1
+prev = current → prev 更新为 2
+current = next_node → current 移动到 3
+此时链表：2 → 1 → None，剩余部分 3 → None
+第三次循环：
+
+next_node = current.next → None
+current.next = prev → 3 指向 2
+prev = current → prev 更新为 3
+current = next_node → current 变为 None
+最终链表：3 → 2 → 1 → None
+终止条件：
+
+当 current 移动到原链表的末尾（即 current 变为 None），循环结束。
+返回 prev，此时 prev 是原链表的尾节点，即反转后的新头节点。
+关键点：
+
+每次循环将当前节点的 next 指向前驱节点 prev，实现局部反转。
+prev 和 current 同步后移，直到遍历完所有节点。
+处理空链表或单节点链表时，逻辑依然成立（直接返回 None 或自身）。
+此算法时间复杂度为 O(n)，空间复杂度为 O(1)，高效地实现了链表的原地反转。
+
+
+current 是什么，为什么能进行三次循环
+已深度思考
+嗯，用户之前问过关于链表反转代码中while循环的执行过程，现在他们进一步问current是什么，为什么能进行三次循环。看起来他们可能对循环的条件和current的变化还不太清楚。
+
+首先，我需要确认用户的理解程度。他们可能知道current是当前节点，但具体三次循环的例子可能让他们困惑。比如，在给出的例子中链表有三个节点1→2→3→None，所以current初始是head（1），然后变成2，再变成3，最后变成None，停止循环。所以三次循环是因为有三个节点需要处理。
+
+用户的问题可能在于不明白current如何变化，或者循环次数和节点数量的关系。我需要解释current在每次循环中的变化，以及循环条件current是否为None的判断。例如，当current是1时进入循环，处理完后变成2，再次进入循环，处理完后变成3，第三次循环变成None后退出。
+
+另外，用户可能混淆了循环次数和节点数量。例如，三个节点需要三次循环，每次处理一个节点，对吗？是的，因为每次循环处理一个节点，移动current到下一个，直到current为None。所以链表长度决定了循环次数。
+
+可能还需要举例说明不同长度的链表，比如空链表、一个节点、两个节点的情况，说明循环次数如何变化。例如，空链表不会进入循环，一个节点进入一次循环，两个节点两次，依此类推。
+
+用户可能还担心循环条件是否正确，比如当current是最后一个节点时，是否会被处理。比如第三次循环时current是3，处理完后current变成next_node也就是None，循环结束，这时候prev已经是3，作为新的头节点返回。所以第三次循环确实处理了第三个节点。
+
+需要确保用户理解current在每次循环中的角色，以及循环如何逐步移动指针，直到链表末尾。可能需要用更详细的步骤分解每次循环中的变量变化，比如prev、current、next_node的值如何更新，以及链表指针如何反转。
+
+最后，总结current的作用和循环次数的原因，强调循环次数等于链表节点数，每个节点处理一次，从而完成整个反转过程。
+
+在链表反转的代码中，current 是遍历链表时的当前节点指针，它从链表的头节点（head）开始，逐步向后移动，直到遍历完所有节点后变为 None。以下详细解释其工作流程和三次循环的原因：
+
+current 的初始值与循环条件
+初始值：
+
+current = head  # 假设链表头是第一个节点（如值为1的节点）
+python
+current 初始指向链表的头节点（即链表的第一个节点）。
+循环条件：
+
+while current:
+python
+只要 current 不是 None（即尚未遍历到链表末尾），循环就会继续。
+三次循环的具体过程（以链表 1 → 2 → 3 → None 为例）
+第一次循环（current 指向 1）
+操作步骤：
+next_node = current.next → next_node 指向 2。
+current.next = prev → 1 的 next 指针指向 None（断开原链接）。
+prev = current → prev 更新为 1。
+current = next_node → current 移动到 2。
+此时链表状态：1 → None，剩余未处理部分：2 → 3 → None。
+第二次循环（current 指向 2）
+操作步骤：
+next_node = current.next → next_node 指向 3。
+current.next = prev → 2 的 next 指针指向 1（形成局部反转 2 → 1 → None）。
+prev = current → prev 更新为 2。
+current = next_node → current 移动到 3。
+此时链表状态：2 → 1 → None，剩余未处理部分：3 → None。
+第三次循环（current 指向 3）
+操作步骤：
+next_node = current.next → next_node 指向 None。
+current.next = prev → 3 的 next 指针指向 2（形成反转 3 → 2 → 1 → None）。
+prev = current → prev 更新为 3。
+current = next_node → current 移动到 None。
+此时链表状态：3 → 2 → 1 → None，剩余未处理部分：None。
+循环终止
+current 变为 None，循环条件 while current: 不再满足，循环结束。
+为什么能进行三次循环？
+链表长度决定循环次数：
+链表有三个节点（1 → 2 → 3 → None），每个节点需要一次循环来处理反转操作。
+循环条件 current 的移动：
+current 初始为 1 → 第一次循环。
+current 移动到 2 → 第二次循环。
+current 移动到 3 → 第三次循环。
+current 移动到 None → 循环终止。
+关键总结
+current 的作用：遍历链表并逐步反转每个节点的 next 指针。
+循环次数：由链表的节点数量决定（3个节点 → 3次循环）。
+终止条件：当 current 移动到链表末尾（None）时，循环结束。
+其他情况验证
+空链表（head = None）：
+
+current 初始为 None，直接跳过循环，返回 None。
+单节点链表（1 → None）：
+
+第一次循环后，current 变为 None，循环结束，返回 1。
+双节点链表（1 → 2 → None）：
+
+第一次循环处理 1 → current 移动到 2。
+第二次循环处理 2 → current 移动到 None。
+最终返回 2 → 1 → None。
+通过逐步移动 current 并反转指针，算法高效地完成了链表的反转。
+
+
+
+
+prew = None
+while current:
+1,2,3 none
+2 3 none
+allnext_node = current.next
+
+none   current = 1, none
+current.next = prew
+
+1, none
+prew = current
+
+2 3 none
+current = allnext_node
+------------------
+3 none
+allnext_node = current.next
+
+1 none    current = 2 1 none
+current.next = prew
+
+2 1 none
+prew = current
+
+3 none
+current = allnext_node
+
+理念 current要逐渐前移到none， prew最开始写赋值时none，逐渐加入把current后面的都切割掉的current加上，也就是最前一位的
+
+先保存后面切割的所有node 将后面切割的所有node赋值成current最前的node
+
+
+
+
+1. DeepSeek-V3系列（蒸馏版）
+模型名称	参数规模	特点	适用场景
+DeepSeek-V3-7B-R1-Distill-Qwen-7B	70亿	通过知识蒸馏技术压缩，保留Qwen-7B核心能力，推理速度提升30%	移动端/边缘设备部署，实时对话场景
+DeepSeek-V3-32B-R1-Distill-Qwen-32B	320亿	在保持90%原模型性能前提下，显存占用减少40%	企业级服务中间件，多轮复杂对话处理
+DeepSeek-V3-8B-R1-Distill-Llama-8B	80亿	针对Llama架构优化，支持128k上下文长度	长文本处理（合同/论文分析）
+2. 超大规模模型
+模型名称	参数规模	特点	适用场景
+DeepSeek-R1-671B	6710亿	MoE混合专家架构，稀疏激活降低30%计算成本	国家级AI基础设施，气象预测等科学计算
+DeepSeek-V3-671B	6710亿	动态token扩展技术，支持512k超长上下文	金融风险建模，基因组序列分析
+3. 特殊版本
+模型名称	参数规模	特点	适用场景
+DeepSeek-R1-671B-外部API	6710亿	提供每秒3000token的流式响应，99.9% SLA保障	互联网平台核心服务（如智能客服中枢）
+QwQ-V1-32B	320亿	集成多模态接口，支持图像-文本跨模态理解	内容审核，电商产品描述生成
+选择建议：
+个人开发者：优先考虑DeepSeek-V3-7B，可在RTX 3090显卡上流畅运行
+企业服务：推荐DeepSeek-V3-32B，平衡成本与性能，支持50并发请求
+科研机构：选用DeepSeek-R1-671B，在蛋白质折叠预测任务中准确率提升17%
+互联网平台：采用API版本，实测可承载百万级日活用户请求
+性能指标参考（基于SuperGLUE基准）：
+
+7B蒸馏版：85.3（比原版下降2.1%）
+671B完整版：92.7（当前SOTA）
+API版本延迟：平均响应时间217ms（欧盟节点）
+建议根据硬件预算（如32B模型需要至少4*A100-80G）和任务类型（代码生成任务建议选Qwen系，学术写作优先Llama系）综合选择。
+
+
+
+
+
+
+
+在设计百度搜索的测试用例时，我会从核心功能、用户体验、性能和安全性等多个维度系统化设计。以下是结构化测试用例设计思路：
+
+一、核心功能测试
+
+搜索框基础功能
+输入中文/英文/特殊字符/超长字符串（>2048字符）验证输入限制
+空搜索时提示错误（如"请输入关键词"）
+历史搜索记录自动保存与清除功能
+语音输入/图片搜索的识别准确率
+搜索结果验证
+前3页结果与关键词的相关性（设立评分标准）
+广告标识是否明确（标注"广告"字样）
+分页功能（每页10条默认验证）
+时效性内容展示（如新闻类结果时间排序）
+搜索建议功能
+输入拼音首字母触发联想（如输入"bj"提示"北京"）
+热词推荐更新时效性（重大事件后2小时内更新）
+敏感词过滤机制（政治/色情等违禁词屏蔽）
+二、用户体验测试
+
+界面交互
+移动端折叠屏适配（搜索结果布局自适应）
+深色模式对比度验证（WCAG 2.0标准）
+页面加载进度条显示逻辑
+辅助功能
+无障碍阅读（屏幕朗读工具兼容性）
+键盘导航（Tab键焦点跳转顺序）
+多语言支持（藏文/维吾尔文等少数民族语言）
+三、性能压力测试
+
+基准性能
+99%请求响应时间<800ms（TPS 5000+）
+瞬时高峰处理（模拟春晚红包级别流量）
+缓存机制
+CDN节点更新延迟（新内容15分钟内同步）
+404页面fallback机制（自动跳转最近缓存版本）
+四、安全测试
+
+注入攻击防护
+SQL/XSS攻击拦截（如输入）
+高频请求限制（单个IP 1000次/分钟阈值）
+隐私保护
+无痕模式不记录Cookie
+搜索日志24小时自动清除机制
+五、特殊场景测试
+
+网络异常
+弱网环境（2G网络）首屏3秒内可交互
+网络切换恢复（WiFi转4G不断连）
+地域化测试
+港澳台地区结果过滤（敏感政治内容屏蔽）
+省级行政区域本地服务优先展示
+六、AI能力专项测试
+
+语义理解
+近义词处理（"苹果手机" vs "iPhone"）
+多意图识别（"2023诺贝尔奖 在哪直播"）
+知识图谱
+实体卡片准确率（人物/地点/事件）
+结构化数据更新频率（上市公司财报数据）
+测试策略建议：
+
+采用A/B测试验证算法改进（分桶比例5%）
+实施Canary Release机制逐步放量
+建立自动化回归测试集（覆盖核心路径3000+用例）
+用户行为埋点分析（点击热图/停留时长）
+该方案覆盖功能、性能、安全等关键维度，同时结合搜索业务特性设计验证点，可有效保障搜索服务质量。建议通过正交分析法减少用例冗余，使用流量回放技术模拟真实用户场景。
+
+
+
+
+
+标题: GitHub520（随意）
+类型: 远程（Remote）
+URL: https://gitee.com/isevenluo/github-hosts/raw/master/hosts
+自动刷新: 最好选 1 小时
+
+本人测试了3个URL，但也都存在时而成功，时而失败的情况
+URL1: https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520@main/hosts
+URL2: https://raw.hellogithub.com/hosts
+URL3: https://gitee.com/isevenluo/github-hosts/raw/master/hosts
+
+
+
+为什么华为的屏幕这么废（打音游不要买华为 - 知乎
+华为的屏幕御三家里面最烂最屑，不管是屏幕素质还是触控响应，究极音游杀手，音游圈里出了名的，懂得都懂，拖判漏判吃音断触要啥有啥
+
+华为手机在音游场景下被用户诟病的触控问题（如断触、拖判、漏判等），主要源于硬件设计、软件优化和测试覆盖度的综合因素。以下是具体原因分析及测试阶段的改进方向：
+
+一、问题原因分析
+1. 硬件层面的先天限制
+触控采样率不足：
+部分华为中端机型触控采样率较低（如60-120Hz），而音游需要瞬时高频率触控响应（例如一加/iPhone的240Hz以上采样率）。低采样率导致触控信号采集间隔长，快速连击时易出现“漏判”。
+触控IC性能瓶颈：
+华为部分机型采用成本较低的触控芯片，多指触控时信号处理延迟较高（如10指触控延迟＞20ms），而音游对多指同步精度极为敏感。
+屏幕材质与触控层设计：
+OLED屏幕的触控层（Sensor）若未针对高精度触控优化（如未使用自研超薄触控方案），可能导致触控坐标偏移或信号干扰。
+2. 软件优化优先级不足
+触控算法偏向日常场景：
+华为EMUI/HarmonyOS的触控逻辑优先考虑省电和误触防护（如手掌抑制算法），而非极低延迟的触控响应。例如，系统可能过滤短时高频触控信号以降低误触概率，但这也导致音游快速点击被“吃音”。
+游戏模式优化不足：
+相比黑鲨、红魔等游戏手机，华为的“游戏空间”对触控报点率的强制提升有限，且缺乏独立触控通道（如绕过系统层直接传输触控信号）。
+第三方音游适配缺失：
+主流音游（如Arcaea、Phigros）未与华为联合调试触控参数，导致游戏内触控判定与屏幕硬件不匹配。
+3. 测试流程覆盖度不足
+实验室测试场景单一：
+厂商常规测试侧重日常操作（滑动、点击），而音游需要极端场景测试（如每秒10次以上的高频点击、多指同步触控）。若测试用例未覆盖这些场景，问题可能被忽略。
+触控延迟指标未透明化：
+华为未公布触控全链路延迟（从手指触屏到系统响应的总时长），而iPhone/iPad通过ProMotion技术将延迟压缩到5ms以内，成为音游标杆。
+二、测试阶段如何发现并改进
+1. 硬件测试强化
+高频触控压力测试：
+使用自动化机械臂模拟音游操作（如每秒20次点击、5指同时触控），统计触控成功率与坐标偏移量。
+触控链路延迟测量：
+通过高速摄像头（1000fps以上）记录从触屏到游戏响应的全流程延迟，对标竞品（如iPad Pro的3ms触控延迟）。
+2. 软件优化方向
+开放游戏专用触控模式：
+在游戏场景下关闭省电策略和误触过滤算法，强制提升触控报点率（如从120Hz提升至480Hz）。
+与音游开发商联合调试：
+针对热门音游定制触控参数（如调整触控坐标映射曲线、关闭系统级触控插值）。
+3. 用户场景反馈机制
+建立垂直用户社群：
+招募音游玩家作为测试用户，通过Beta版本收集高频触控问题（如特定区域的断触复现）。
+提供触控诊断工具：
+在手机内置“触控响应测试”功能（如小米的触控点按测试），让用户自行检测触控问题并生成日志供工程师分析。
+三、用户临时解决方案
+若已使用华为设备且遭遇音游触控问题，可尝试以下缓解措施：
+
+关闭省电模式与手势优化：
+进入「设置-电池-省电模式」关闭省电，在「开发者选项」中禁用「指针位置」和「触控反馈」。
+使用第三方工具强制提升触控响应：
+通过ADB命令强制开启高触控采样率（需Root权限，存在风险）。
+外接触控辅助设备：
+部分音游玩家通过USB-C转接器连接iPad作为“外屏”，绕过华为屏幕触控层。
+总结
+华为屏幕在音游场景下的短板，本质上是产品定义与用户需求错配的结果——厂商更关注大众市场的续航、显示效果，而音游玩家需要极致的触控性能。若要改善这一问题，需从硬件设计（高采样率触控IC）、软件策略（游戏场景专属优化）和测试流程（高频触控压力测试）三方面同步突破。对于音游重度玩家，现阶段仍建议优先选择iPhone/iPad或专业游戏手机。
+
+
+
+
+尊敬的CIDA用户：
+CIDA平台近期发布了新版本，对CIDA项目上需求验证状态和验收状态两个指标的状态修改进行调整。针对本次变更如有问题请联系：周杰 00576805、黄国建 00595655、王萩桔 wx1236610
+
+更新内容：
+1.需求测试跟踪状态 改成需求验收，涉及【需求关联用例】、【CIDARequirement2TC】APP。
+2.需求验收状态和验证状态支持修改
+
+详情见wiki：
+
+【CIDA】【需求管理】【验收状态】修改说明
+
+https://3ms.huawei.com/km/groups/3902501/blogs/details/20391920
+
+【CIDA】【需求管理】【验证状态】修改说明
+
+https://3ms.huawei.com/km/groups/3902501/blogs/details/20391921?l=zh-cn
+
+
+
+
+
+
+
+业务搭建wifi命名 WUHZR-E1-ROUTE-8F-ODC-座位号
+
+usb特殊权限 绿蓝 http://7.185.30.88:8888
+黄 http://7.212.92.159:8888
+
+
+三层主管 四层
+高泉 00579234	高涵一 00655032
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+
+计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings
+FlightSettingsMaxPauseDays
+
+
+
+

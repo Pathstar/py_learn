@@ -1,0 +1,17 @@
+
+19:37:13 #
+19:38:00 Task List: 1.0, 5.0, 20.0, -2.0
+19:38:00 Step 1: Wait 1.0 minute(s) (60 seconds)...
+
+19:41:02 #
+
+19:41:39 #
+19:41:41 Task List: 0.03, 5.0, 20.0, -1.0
+19:41:41 Step 1: Wait 0.03 minute(s) (1 seconds)...
+19:41:42 -> Turn off monitor
+19:41:42 Step 2: Wait 5.0 minute(s) (300 seconds)...
+19:46:42 -> Wake up monitor by mouse
+19:46:43 Step 3: Wait 20.0 minute(s) (1200 seconds)...
+20:06:43 -> Turn off monitor
+20:06:43 -> shutdown /s /f /t 60
+20:06:43 All steps finished.
