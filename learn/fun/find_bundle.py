@@ -25,13 +25,14 @@ if __name__ == '__main__':
     hap_path_input = input("hap文件路径：").strip()
     hap_path = hap_path_input
     # hap_path = r"D:\SoftXD\traces\tool\sign_tool\newstar.hap"
-    if not hap_path_input.lower().endswith('.hap'):
+    if hap_path_input and not hap_path_input.lower().endswith('.hap'):
         hap_path += hap_path_input + '.hap'
     if not hap_path or not os.path.isfile(hap_path):
         print(f"不存在: {hap_path_input}")
         input()
 
-    app_in_file = hap_path  # app签名输入文件
+    app_in_file = hap_path
+    # app签名输入文件
     # # 2. 输入后缀
     # while True:
     #     user_suffix = input("请输入后缀，例如XD：").strip()
